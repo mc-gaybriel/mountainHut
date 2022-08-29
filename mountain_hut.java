@@ -10,6 +10,7 @@ public class mountain_hut
     private Square sky;
     private Triangle mountain1;
     private Triangle mountain2;
+    private Circle sun;
     private Square wall;
     private Triangle roof;
 
@@ -21,6 +22,8 @@ public class mountain_hut
         drawMountain1();
         mountain2 = new Triangle();
         drawMountain2();
+        sun = new Circle();
+        drawSun();
     }
 
     public void drawSky()
@@ -46,6 +49,15 @@ public class mountain_hut
         mountain2.moveHorizontal(150);
         mountain2.moveVertical(100);
         mountain2.changeColor("grassGreen");
+    }
+
+    public void drawSun()
+    {
+        sun.makeVisible();
+        sun.changeSize(50);
+        sun.moveVertical(20);
+        sun.moveHorizontal(200);
+        sun.changeColor("yellow");
     }
 
 }
