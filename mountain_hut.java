@@ -16,6 +16,8 @@ public class mountain_hut
     private Square door1;
     private Square door2;
     private Square window;
+    private Square chimney1;
+    private Square chimney2;
 
     public mountain_hut()
     {
@@ -37,6 +39,10 @@ public class mountain_hut
         drawDoor2();
         window = new Square();
         drawWindow();
+        chimney1 = new Square();
+        drawChimney1();
+        chimney2 = new Square();
+        drawChimney2();
     }
 
     public void drawSky()
@@ -99,7 +105,7 @@ public class mountain_hut
         door1.changeSize(13);
         door1.changeColor("darkBrown");
     }
-    
+
     public void drawDoor2()
     {
         door2.makeVisible();
@@ -108,7 +114,7 @@ public class mountain_hut
         door2.changeSize(13);
         door2.changeColor("darkBrown");
     }
-    
+
     public void drawWindow()
     {
         window.makeVisible();
@@ -117,4 +123,23 @@ public class mountain_hut
         window.changeSize(13);
         window.changeColor("lightBlue");
     }
+
+    public void drawChimney1()
+    {
+        chimney1.makeVisible();
+        chimney1.changeSize(8);
+        chimney1.moveVertical(186);
+        chimney1.moveHorizontal(168);
+        chimney1.changeColor("black");
+    }
+
+    public void drawChimney2()
+    {
+        chimney2.makeVisible();
+        chimney2.changeSize(8);
+        chimney2.moveVertical(178);
+        chimney2.moveHorizontal(168);
+        chimney2.changeColor("black");
+    }
+
 }
