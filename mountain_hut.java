@@ -1,16 +1,22 @@
 
 /**
- * Beschreiben Sie hier die Klasse mountain_hut.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * Write a description of class tardis here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
  */
 public class mountain_hut
 {
     private Square sky;
     private Triangle mountain1;
     private Triangle mountain2;
-    private Circle sun;
+    private Triangle snow1;
+    private Triangle snow2;
+    private Circle moon;
+    private Square cloudS;
+    private Circle cloud1;
+    private Circle cloud2;
+    private Circle cloud3;
     private Square wall;
     private Triangle roof;
     private Square door1;
@@ -25,10 +31,22 @@ public class mountain_hut
         drawSky();
         mountain1 = new Triangle();
         drawMountain1();
+        snow1 = new Triangle();
+        drawSnow1();
         mountain2 = new Triangle();
         drawMountain2();
-        sun = new Circle();
-        drawSun();
+        snow2 = new Triangle();
+        drawSnow2();
+        moon = new Circle();
+        drawMoon();
+        cloudS = new Square();
+        drawCloudS();
+        cloud1 = new Circle();
+        drawCloud1();
+        cloud2 = new Circle();
+        drawCloud2();
+        cloud3 = new Circle();
+        drawCloud3();
         wall = new Square();
         drawWall();
         roof = new Triangle();
@@ -48,35 +66,88 @@ public class mountain_hut
     public void drawSky()
     {
         sky.makeVisible();
-        sky.changeColor("lightBlue");
+        sky.changeColor("skyGrey");
         sky.changeSize(300);
     }
 
     public void drawMountain1()
     {
         mountain1.makeVisible();
-        mountain1.changeSize(150,300);
-        mountain1.moveHorizontal(60);
-        mountain1.moveVertical(150);
-        mountain1.changeColor("grassGreen");
+        mountain1.changeSize(200,300);
+        mountain1.moveHorizontal(150);
+        mountain1.moveVertical(100);
+        mountain1.changeColor("darkGrey");
+    }
+
+    public void drawSnow1()
+    {
+        snow1.makeVisible();
+        snow1.moveHorizontal(150);
+        snow1.moveVertical(100);
+        snow1.changeSize(40,60);
+        snow1.changeColor("white");
     }
 
     public void drawMountain2()
     {
         mountain2.makeVisible();
-        mountain2.changeSize(200,300);
-        mountain2.moveHorizontal(150);
-        mountain2.moveVertical(100);
-        mountain2.changeColor("grassGreen");
+        mountain2.changeSize(150,300);
+        mountain2.moveHorizontal(60);
+        mountain2.moveVertical(150);
+        mountain2.changeColor("darkGrey");
     }
 
-    public void drawSun()
+    public void drawSnow2()
     {
-        sun.makeVisible();
-        sun.changeSize(50);
-        sun.moveVertical(20);
-        sun.moveHorizontal(200);
-        sun.changeColor("yellow");
+        snow2.makeVisible();
+        snow2.moveHorizontal(60);
+        snow2.moveVertical(150);
+        snow2.changeSize(25,50);
+        snow2.changeColor("white");
+    }
+
+    public void drawMoon()
+    {
+        moon.makeVisible();
+        moon.changeSize(50);
+        moon.moveVertical(35);
+        moon.moveHorizontal(50);
+        moon.changeColor("moonGlow");
+    }
+
+    public void drawCloudS()
+    {
+        cloudS.makeVisible();
+        cloudS.moveHorizontal(50);
+        cloudS.moveVertical(60);
+        cloudS.changeColor("cloudGrey");
+    }
+
+    public void drawCloud1()
+    {
+        cloud1.makeVisible();
+        cloud1.changeSize(31);
+        cloud1.moveHorizontal(30);
+        cloud1.moveVertical(59);
+        cloud1.changeColor("cloudGrey");
+    }
+    
+    public void drawCloud2()
+    {
+        cloud2.makeVisible();
+        cloud2.changeSize(31);
+        cloud2.moveHorizontal(45);
+        cloud2.moveVertical(45);
+        cloud2.changeColor("cloudGrey");
+    }
+    
+    public void drawCloud3()
+    {
+        cloud3.makeVisible();
+        cloud3.changeSize(31);
+        cloud3.moveHorizontal(60);
+        cloud3.moveVertical(59);
+        cloud3.changeColor("cloudGrey");
     }
 
     public void drawWall()
