@@ -137,14 +137,12 @@ public class Canvas
             graphic.setColor(Color.white);
         else if(colorString.equals("skyGrey"))
             graphic.setColor(new Color(38,38,38));
-        else if(colorString.equals("grassGreen"))
-            graphic.setColor(new Color(124,252,0));
         else if(colorString.equals("brown"))
             graphic.setColor(new Color(191,128,64));
         else if(colorString.equals("darkBrown"))
             graphic.setColor(new Color(115,77,38));
-        else if(colorString.equals("lightBlue"))
-            graphic.setColor(new Color(204,242,255));
+        else if(colorString.equals("light"))
+            graphic.setColor(new Color(255,214,153));
         else if(colorString.equals("darkGrey"))
             graphic.setColor(new Color(89,89,89));
         else if(colorString.equals("Grey"))

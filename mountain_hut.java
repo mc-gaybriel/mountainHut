@@ -24,6 +24,9 @@ public class mountain_hut
     private Square window;
     private Square chimney1;
     private Square chimney2;
+    private Circle smoke1;
+    private Circle smoke2;
+    private Circle smoke3;
 
     public mountain_hut()
     {
@@ -61,6 +64,12 @@ public class mountain_hut
         drawChimney1();
         chimney2 = new Square();
         drawChimney2();
+        smoke1 = new Circle();
+        drawSmoke1();
+        smoke2 = new Circle();
+        drawSmoke2();
+        smoke3 = new Circle();
+        drawSmoke3();
     }
 
     public void drawSky()
@@ -131,7 +140,7 @@ public class mountain_hut
         cloud1.moveVertical(59);
         cloud1.changeColor("cloudGrey");
     }
-    
+
     public void drawCloud2()
     {
         cloud2.makeVisible();
@@ -140,7 +149,7 @@ public class mountain_hut
         cloud2.moveVertical(45);
         cloud2.changeColor("cloudGrey");
     }
-    
+
     public void drawCloud3()
     {
         cloud3.makeVisible();
@@ -192,9 +201,9 @@ public class mountain_hut
         window.moveVertical(230);
         window.moveHorizontal(160);
         window.changeSize(13);
-        window.changeColor("lightBlue");
+        window.changeColor("light");
     }
-
+    
     public void drawChimney1()
     {
         chimney1.makeVisible();
@@ -203,7 +212,7 @@ public class mountain_hut
         chimney1.moveHorizontal(168);
         chimney1.changeColor("black");
     }
-
+    
     public void drawChimney2()
     {
         chimney2.makeVisible();
@@ -211,6 +220,33 @@ public class mountain_hut
         chimney2.moveVertical(178);
         chimney2.moveHorizontal(168);
         chimney2.changeColor("black");
+    }
+    
+    public void drawSmoke1()
+    {
+        smoke1.makeVisible();
+        smoke1.changeSize(8);
+        smoke1.moveHorizontal(168);
+        smoke1.moveVertical(170);
+        smoke1.changeColor("lightGrey");
+    }
+    
+    public void drawSmoke2()
+    {
+        smoke2.makeVisible();
+        smoke2.changeSize(8);
+        smoke2.moveHorizontal(170);
+        smoke2.moveVertical(161);
+        smoke2.changeColor("lightGrey");
+    }
+    
+    public void drawSmoke3()
+    {
+        smoke3.makeVisible();
+        smoke3.changeSize(8);
+        smoke3.moveHorizontal(172);
+        smoke3.moveVertical(152);
+        smoke3.changeColor("lightGrey");
     }
 
 }
