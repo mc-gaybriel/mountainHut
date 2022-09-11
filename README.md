@@ -1,5 +1,6 @@
 # mountainHut
 Author: Gabriel Nickel
+Github: https://github.com/nlgabe/mountainHut/
 
 Project mountainHut is coded in BlueJ and is a task in IT class at school.
 
